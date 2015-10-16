@@ -1,0 +1,38 @@
+{
+  "name": "line-read",
+  "version": "1.0.0",
+  "description": "Read line by line from a stream, file or stdin lazily.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhhh/line-read.git"
+  },
+  "author": {
+    "name": "Minh Ha",
+    "email": "minhhh@minhhuyha.info",
+    "url": "minhhh.github.com"
+  },
+  "engines": {
+    "node": ">=0.11.10"
+  },
+  "scripts": {
+    "test": "ava test.js",
+    "lint": "jshint **.js"
+  },
+  "main": "index.js",
+  "keywords": [
+    "stream",
+    "line",
+    "stdin",
+    "read",
+    "line"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "jshint": "*"
+  },
+  "dependencies": {
+    "lazy": "~1.0.11",
+    "buffer": "~3.5.1"
+  }
+}
