@@ -1,6 +1,6 @@
 {
   "name": "line-read",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read line by line from a stream, file or stdin lazily.",
   "license": "MIT",
   "repository": {
