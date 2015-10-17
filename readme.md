@@ -11,11 +11,30 @@ $ npm install --save line-read
 
 
 ## Usage
+Read all lines from a small file in one go
 
 ```js
     var readline = require('line-read');
-    readline.readLineFromFile('filename', '\n').join(function(xs) {
+    readline.readLineFromFile('filename').join(function(xs) {
         // xs is the list of lines from the file
+    });
+```
+
+To read from a very large file, it would be better to read each line one by one.
+
+```js
+    var readline = require('line-read');
+    readline.readLineFromFile('filename').forEach(function(line) {
+        console.log(line);
+    });
+```
+
+Reading from stdin is similar to reading from a large file
+
+```js
+    var readline = require('line-read');
+    readline.readLine(process.stdin).forEach(function(line) {
+        console.log('line ' + line);
     });
 ```
 
